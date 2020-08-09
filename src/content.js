@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Mockup from "./mockup.png";
+import Mockup from "./mockup2.png";
 import Scoring from "./scoring.png";
 import Sustainability from "./sustainability.png";
 
@@ -80,8 +80,10 @@ export default () => {
             The Wearwell Brand Score is calculated using a variety of factors.
             We analyze each company’s decisions surrounding labor, agriculture,
             carbon emissions, water consumption, and the supply chain to produce
-            a score out of 250. If a brand scores high, they are considered more
-            sustainable.
+            a score out of 250.{" "}
+            <strong>
+              If a brand scores high, they are considered more sustainable.
+            </strong>
           </DescText>
         </LeftSide>
         <RightSide>
@@ -110,8 +112,8 @@ export default () => {
             <br />
             <br />
             You, as a consumer, have power. You can determine whether or not
-            companies can continue their negative actions. Your choices can
-            shape our future.
+            companies can continue their negative actions.{" "}
+            <strong>Your choices can shape our future.</strong>
           </DescText>
         </RightSide>
       </SustainContainer>
