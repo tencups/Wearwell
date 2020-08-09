@@ -27,6 +27,11 @@ const GlobalStyle = createGlobalStyle`
     
   body { 
     background: #F5F3F1;
+    scroll-behavior: smooth;
+  }
+  
+  html {
+    scroll-behavior: smooth;
   }
 
 `;

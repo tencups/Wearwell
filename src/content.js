@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Mockup from "./mockup.png";
+import Scoring from "./scoring.png";
+import Sustainability from "./sustainability.png";
 
 const ContentContainer = styled("div")`
   display: grid;
@@ -39,10 +41,19 @@ const HeaderText = styled("div")`
   font-size: 2rem;
 `;
 
+const SustainContainer = styled("div")`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+`;
+
 export default () => {
   return (
     <React.Fragment>
-      <ContentContainer>
+      <ContentContainer id="learn">
         <LeftSide>
           <Image src={Mockup} />
         </LeftSide>
@@ -69,17 +80,19 @@ export default () => {
           </DescText>
         </LeftSide>
         <RightSide>
-          <Image src={Mockup} />
+          <Image src={Scoring} />
         </RightSide>
       </ContentContainer>
 
-      <ContentContainer>
-        <LeftSide>
-          <Image src={Mockup} />
+      <SustainContainer>
+        <LeftSide style={{ marginTop: "50px" }}>
+          <Image src={Sustainability} />
         </LeftSide>
         <RightSide>
-          <HeaderText>Why Sustainability Matters</HeaderText>
-          <DescText>
+          <HeaderText style={{ margin: "30px 0" }}>
+            Why Sustainability Matters
+          </HeaderText>
+          <DescText style={{ width: "50vw" }}>
             Data shows that only 50% of consumers have accessed information
             about sustainability in fashion. This lack of information is the
             biggest barrier to consumers purchasing from sustainable brands.
@@ -96,7 +109,7 @@ export default () => {
             shape our future.
           </DescText>
         </RightSide>
-      </ContentContainer>
+      </SustainContainer>
     </React.Fragment>
   );
 };

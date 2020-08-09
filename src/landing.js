@@ -28,6 +28,7 @@ const ActionButtons = styled("button")`
   width: 250px;
   margin: 40px 18px;
   border: none;
+  cursor: pointer;
   font-size: 1em;
   font-weight: 200;
   height: 60px;
@@ -56,7 +57,9 @@ export default () => {
         Mindful Fashion Made Easy
       </DescText>
       <ButtonContainer>
-        <ActionButtons>Learn More</ActionButtons>
+        <a href="#learn">
+          <ActionButtons>Learn More</ActionButtons>
+        </a>
         <ActionButtons>Download Extension</ActionButtons>
       </ButtonContainer>
     </LandingContainer>
