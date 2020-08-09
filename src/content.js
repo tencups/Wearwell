@@ -77,10 +77,13 @@ export default () => {
         <LeftSide>
           <HeaderText>The Scoring Method</HeaderText>
           <DescText>
-            The Wearwell Brand Score is calculated using a variety of factors.
-            We analyze each company’s decisions surrounding labor, agriculture,
-            carbon emissions, water consumption, and the supply chain to produce
-            a score out of 250.{" "}
+            The{" "}
+            <a href="https://www.fashionrevolution.org/about/transparency/">
+              Wearwell Brand Score
+            </a>{" "}
+            is calculated using a variety of factors. We analyze each company’s
+            decisions surrounding labor, agriculture, carbon emissions, water
+            consumption, and the supply chain to produce a score out of 250.{" "}
             <strong>
               If a brand scores high, they are considered more sustainable.
             </strong>
