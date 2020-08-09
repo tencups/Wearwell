@@ -26,7 +26,6 @@ const RightSide = styled("div")`
 
 const Image = styled("img")`
   width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
 const DescText = styled("div")`
@@ -55,7 +54,13 @@ export default () => {
     <React.Fragment>
       <ContentContainer id="learn">
         <LeftSide>
-          <Image src={Mockup} />
+          <Image
+            src={Mockup}
+            style={{
+              boxShadow:
+                "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+            }}
+          />
         </LeftSide>
         <RightSide>
           <HeaderText>Sustainability: Uncovered</HeaderText>
@@ -85,13 +90,13 @@ export default () => {
       </ContentContainer>
 
       <SustainContainer>
-        <LeftSide style={{ marginTop: "50px" }}>
+        <HeaderText style={{ marginTop: "-120px" }}>
+          Why Sustainability Matters
+        </HeaderText>
+        <LeftSide>
           <Image src={Sustainability} />
         </LeftSide>
-        <RightSide>
-          <HeaderText style={{ margin: "30px 0" }}>
-            Why Sustainability Matters
-          </HeaderText>
+        <RightSide style={{ marginTop: "-70px" }}>
           <DescText style={{ width: "50vw" }}>
             Data shows that only 50% of consumers have accessed information
             about sustainability in fashion. This lack of information is the
