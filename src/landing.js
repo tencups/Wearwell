@@ -60,7 +60,9 @@ export default () => {
         <a href="#learn">
           <ActionButtons>Learn More</ActionButtons>
         </a>
-        <ActionButtons>Download Extension</ActionButtons>
+        <a href="https://chrome.google.com/webstore/detail/wearwell/deodaikignjkddkghbnffigjambojpdj">
+          <ActionButtons>Download Extension</ActionButtons>
+        </a>
       </ButtonContainer>
     </LandingContainer>
   );

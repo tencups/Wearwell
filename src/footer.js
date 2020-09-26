@@ -32,14 +32,16 @@ const DescText = styled("div")`
 `;
 
 const FooterIcon = styled("img")`
-  margin-top: 0px;
+  margin-top: 200px;
 `;
 
 export default () => {
   return (
     <FooterContainer>
-      <ActionButton>Download Extension</ActionButton>
-      <DescText>Created with 💖 by students for HackZ</DescText>
+      <a href="https://chrome.google.com/webstore/detail/wearwell/deodaikignjkddkghbnffigjambojpdj">
+        <ActionButton>Download Extension</ActionButton>
+      </a>
+      {/*<DescText>Created with 💖 by students for HackZ</DescText>*/}
       <FooterIcon src={Icon} />
     </FooterContainer>
   );
